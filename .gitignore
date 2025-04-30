@@ -1,0 +1,23 @@
+# Ignore compiled classes
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore Eclipse/IntelliJ IDEA project files
+/.idea/
+/*.iml
+/.vscode/
+/target/
+
+# Ignore temporary files
+*.tmp
+*.bak
+
+# AWS credentials if any
+*.aws
+
+# Ignore local test resources/files
+/test_files/
+
+.DS_STORE
