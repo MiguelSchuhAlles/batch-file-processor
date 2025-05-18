@@ -9,8 +9,8 @@
   <name>batch-file-processor</name>
 
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>  <!-- JDK version for source -->
-    <maven.compiler.target>17</maven.compiler.target>  <!-- JDK version for output class files -->
+    <maven.compiler.source>11</maven.compiler.source>  <!-- JDK version for source -->
+    <maven.compiler.target>11</maven.compiler.target>  <!-- JDK version for output class files -->
   </properties>
 
   <url>http://maven.apache.org</url>
