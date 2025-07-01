@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 
 import lombok.extern.slf4j.Slf4j;
 import software.amazon.awssdk.core.ResponseInputStream;
+import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.CopyObjectRequest;
 import software.amazon.awssdk.services.s3.model.DeleteObjectRequest;
@@ -23,7 +24,9 @@ public class S3FileManager {
     private S3Client s3;
 
     public S3FileManager() {
-        s3 = S3Client.create();
+        s3 = S3Client.builder()
+                    .region(Region.US_EAST_1)
+                    .build();
     }
 
     public Stream<String> listPendingFiles(String bucketName) {
